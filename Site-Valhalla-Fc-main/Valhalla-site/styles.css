@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #000401;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+header {
+    text-align:center;
+    padding: 20px 16px 16px;
+    background-color: #000401;
+}
+
+.escudo {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.marca {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #FF2C2C;
+}
+
+.escondido {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+nav button {
+    padding: 8px 16px;
+    color: #ffffff;
+    background-color: #FF2C2C;
+    border-radius: 999px;
+}
+
+nav button:hover {
+  color: #f2f4f8;
+  background-color: #FFBF00;
+}
+
+nav button.ativo {
+    color: #ffffff;
+    background-color: #5c0909;
+}
+
+#inicio {
+    text-align: center;
+    min-height: 300px;
+}
+
+#inicio p {
+    margin-bottom: 24px;
+}
+
+h1 {
+    color: #FF2C2C;
+    font-size: 1.6rem;
+    margin-top: 4px;
+}
+
+main section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 16px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    color: white;
+}
+
+#jogos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #000401;
+    border-radius: 12px;
+}
+
