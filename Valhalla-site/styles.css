@@ -148,6 +148,10 @@ h2 {
     margin: 40px auto;
 }
 
+.carrossel h3 {
+    margin: 20px;
+}
+
 .janela {
     width: 100%;
     overflow: hidden;
