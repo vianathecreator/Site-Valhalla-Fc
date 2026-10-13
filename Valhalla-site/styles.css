@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -71,7 +73,7 @@ nav button.ativo {
 
 h1 {
     color: #FF2C2C;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: 4px;
 }
 
@@ -82,18 +84,59 @@ main section {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 16px;
     color: white;
 }
 
 #jogos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    padding: 16px;
     margin-bottom: 16px;
     background-color: #000401;
     border-radius: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+#jogos h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cardJogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+#titulos {
+    text-align: center;
+    min-height: 300px;
+}
+
+.escudoVal img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.escudoADV img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;   
+}
+
+.placar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.placar h2 {
+    margin: 0;
+    font-size: xx-large;
+}
