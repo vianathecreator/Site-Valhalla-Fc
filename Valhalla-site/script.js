@@ -18,3 +18,12 @@ inicio.addEventListener("click", function() {
 elenco.addEventListener("click", function() {
     window.location.href = "jogos.html";
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    new Splide('.splide', {
+        type:'loop',
+        autoplay: true,
+        interval: 3000,
+        perPage: 1,
+    }) .mount();
+});

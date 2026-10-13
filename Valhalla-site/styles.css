@@ -140,3 +140,9 @@ h2 {
     margin: 0;
     font-size: xx-large;
 }
+
+.splide__list img{
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+}
