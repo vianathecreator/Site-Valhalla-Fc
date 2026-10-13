@@ -1,29 +1,20 @@
-const jogos = document.querySelector("#jogos");
-const titulos = document.querySelector("#titulos");
-const inicio = document.querySelector("#inicio");
-const elenco = document.querySelector("#elenco");
+const faixa = document.querySelector('.faixa');
+const slides = document.querySelectorAll('.slide');
+const anterior = document.querySelector('.botaoant');
+const proximo = document.querySelector('.botaoprox');
 
-jogos.addEventListener("click", function() {
-    window.location.href = "jogos.html";
+let indice = 0;
+
+function atualizarCarrosel() {
+    faixa.style.transform = `translateX(-${indice * 100}%)`;
+}
+
+proximo.addEventListener('click', () => {
+    indice = (indice + 1) % slides.length;
+    atualizarCarrosel();
 });
 
-titulos.addEventListener("click", function() {
-    window.location.href = "jogos.html";
-});
-
-inicio.addEventListener("click", function() {
-    window.location.href = "jogos.html";
-});
-
-elenco.addEventListener("click", function() {
-    window.location.href = "jogos.html";
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    new Splide('.splide', {
-        type:'loop',
-        autoplay: true,
-        interval: 3000,
-        perPage: 1,
-    }) .mount();
+anterior.addEventListener('click', () => {
+    indice = (indice - 1 + slides.length) % slides.length;
+    atualizarCarrosel();
 });
