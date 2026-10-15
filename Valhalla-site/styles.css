@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    color: white;
-    background-color: #000401;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -71,7 +72,7 @@ nav button.ativo {
     margin-bottom: 24px;
 }
 
-h1 {
+header h1 {
     color: #FF2C2C;
     font-size: 1.8rem;
     margin-top: 4px;
@@ -86,12 +87,12 @@ main section {
 h2 {
     font-size: 1.5rem;
     margin-bottom: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #jogos {
     margin-bottom: 16px;
-    background-color: #000401;
+    background-color: #979797;
     border-radius: 12px;
     max-width: 1200px;
     margin: 0 auto;
@@ -196,3 +197,21 @@ h2 {
 
 .botaoant { left: 15px; }
 .botaoprox { right: 15px;}
+
+#sobre {
+    text-align: justify;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 10px 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.secao {
+    display: none;
+}
+
+.secao.active {
+    display: block;
+}
