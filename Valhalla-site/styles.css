@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -11,6 +13,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
 h1, h2, h3, h4, p {
   margin: 0;
 }
@@ -202,16 +207,20 @@ h2 {
     text-align: justify;
     min-height: 300px;
     margin: 0 auto;
-    padding: 10px 100px;
+    padding: 50px 50px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-.secao {
-    display: none;
+#sobre h1 {
+    text-align: center;
 }
 
-.secao.active {
-    display: block;
+.instagram {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.2 ease;
+}
+
+.instagram:hover {
+    transform: scale(1.15);
 }
