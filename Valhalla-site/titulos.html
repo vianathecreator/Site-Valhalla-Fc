@@ -1,37 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JTítulos do Valhalla</title>
-    <link rel="icon" href="img/escudo_valhalla.png">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<header id="topo">
-    <img src="img/escudo_valhalla.png" alt="Escudo do Valhalla" class="escudo">
-    <p class="marca">VALHALLA FC</p>
-
-    <nav>
-        <button onclick="window.location.href='index.html'">Início</button>
-        <button onclick="window.location.href= 'jogos.html'">Jogos</button>
-        <button onclick="window.location.href= 'elenco.html'">Elenco</button>
-        <button onclick="window.location.href= 'titulos.html'">Títulos</button>
-        <button onclick="window.location.href= 'torcedor.html'">Área do torcedor</button>
-        <button onclick="window.location.href= 'sobre.html'">Sobre Nós</button>
-    </nav>
-</header>
-
-<section id="titulos">
-    <h1>Títulos Conquistados</h1> <br>
-    <h3>Copa FJU 2025</h3>
-    <h3>Liga Valhalla 2026</h3>
-</section>
-
-<section id="torcedor">
-    <h2>em breve...</h2>
-</section>
-
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Títulos do Valhalla</title><link rel="icon" href="img/escudo_valhalla.png"><link rel="stylesheet" href="styles.css"></head>
+<body data-p="titulos">
+<header id="topo"></header>
+<div class="topo-pag"><h1>Títulos</h1><p>A história das conquistas do Valhalla. Coloque as fotos dos troféus em img/titulos/.</p></div>
+<main class="wrap">
+<article class="titulo"><div class="foto"><img src="img/titulos/copa-fju-2025.jpg" alt="Troféu da Copa FJU 2025" onerror="this.remove()"></div><div><h2>Copa FJU 2025</h2><p class="sub">1ª edição – Campeão</p><p>Torneio organizado pela Igreja Universal da 3ª Divisão. Com a desistência das outras equipes, a final foi Valhalla x Astro, e o time venceu por 8 a 3, com gols de Kelven, Thiago e Allan.</p><p>Foi o primeiro título da história do clube.</p><a href="jogos.html#3">Ver a final</a></div></article>
+<article class="titulo"><div class="foto"><img src="img/titulos/liga-valhalla-2026.jpg" alt="Troféu da Liga Valhalla 2026" onerror="this.remove()"></div><div><h2>Liga Valhalla 2026</h2><p class="sub">Triangular – Campeão</p><p>Mini torneio organizado pelo próprio clube, com Valhalla, Hooligans e Manicos, que entrou no lugar do Astro. O Valhalla empatou com o Manicos por 6 a 6 e venceu o Hooligans por 4 a 3, fechando como campeão com 4 pontos.</p><a href="jogos.html#6">Ver Manicos</a> &nbsp; <a href="jogos.html#7">Ver Hooligans</a></div></article>
+<article class="titulo"><div class="foto"><img src="img/titulos/copa-fju-2026.jpg" alt="Copa FJU 2026" onerror="this.remove()"></div><div><h2>Copa FJU 2026</h2><p class="sub">2ª edição – Vice-campeão</p><p>O Valhalla passou da fase de grupos eliminando o time da FJU e o Astro, mas perdeu a final por 8 a 6 para o Sporting Magnatas.</p><a href="jogos.html#5">Ver a final</a></div></article>
+</main>
+<footer id="rodape"></footer>
+<script src="jogadores.js"></script><script src="jogos.js"></script><script src="script.js"></script>
 </body>
 </html>

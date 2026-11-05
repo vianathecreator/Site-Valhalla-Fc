@@ -1,51 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área do torcedor</title>
-    <link rel="icon" href="img/escudo_valhalla.png">
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
-
-<header id="topo">
-    <img src="img/escudo_valhalla.png" alt="Escudo do Valhalla" class="escudo">
-    <p class="marca">VALHALLA FC</p>
-
-    <nav>
-        <button onclick="window.location.href='index.html'">Início</button>
-        <button onclick="window.location.href= 'jogos.html'">Jogos</button>
-        <button onclick="window.location.href= 'elenco.html'">Elenco</button>
-        <button onclick="window.location.href= 'titulos.html'">Títulos</button>
-        <button onclick="window.location.href= 'torcedor.html'">Área do torcedor</button>
-        <button onclick="window.location.href= 'sobre.html'">Sobre Nós</button>
-    </nav>
-</header>
-
-<section id="formulario">
-
-    <h1>Área do Torcedor</h1>
-    <h2>Se cadastre e seja um Valhallaloko!</h2>
-
-        <form action="https://formspree.io/f/moejgrwr" method="POST">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        
-        <p></p>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <p></p>
-        <label for="Senha">Senha:</label>
-        <input type="password" id="senha" name="senha">
-        <p></p>
-        <p>
-            <button type="submit">Criar Conta</button>
-            <button type="reset">Limpar</button>
-        </p>
-    </form>
-</section>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Área do torcedor</title><link rel="icon" href="img/escudo_valhalla.png"><link rel="stylesheet" href="styles.css"></head>
+<body data-p="torcedor">
+<header id="topo"></header>
+<div class="topo-pag"><h1>Área do torcedor</h1><p>Se cadastre e seja um Valhallaloko!</p></div>
+<main class="wrap">
+<form action="https://formspree.io/f/moejgrwr" method="POST"><div><label for="nome">Nome</label><input type="text" id="nome" name="nome" required></div><div><label for="email">E-mail</label><input type="email" id="email" name="email" required></div><div><button class="btn" type="submit">Quero ser torcedor</button></div></form>
+<div class="card" style="max-width:460px"><h3>Produtos oficiais</h3><p>A loja do Valhalla está a caminho. Cadastre-se para ser avisado.</p></div>
+</main>
+<footer id="rodape"></footer>
+<script src="jogadores.js"></script><script src="jogos.js"></script><script src="script.js"></script>
 </body>
 </html>

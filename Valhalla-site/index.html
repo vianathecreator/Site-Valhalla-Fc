@@ -1,38 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valhalla FC</title>
-    <link rel="icon" href="img/escudo_valhalla.png">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-
-<header id="topo">
-    <img src="img/escudo_valhalla.png" alt="Escudo do Valhalla" class="escudo">
-    <p class="marca">VALHALLA FC</p>
-
-    <nav>
-        <button onclick="window.location.href='index.html'">Início</button>
-        <button onclick="window.location.href= 'jogos.html'">Jogos</button>
-        <button onclick="window.location.href= 'elenco.html'">Elenco</button>
-        <button onclick="window.location.href= 'titulos.html'">Títulos</button>
-        <button onclick="window.location.href= 'torcedor.html'">Área do torcedor</button>
-        <button onclick="window.location.href= 'sobre.html'">Sobre Nós</button>
-    </nav>
-</header>
-
-
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Valhalla FC – Guerreiros da Quebrada</title><link rel="icon" href="img/escudo_valhalla.png"><link rel="stylesheet" href="styles.css"></head>
+<body data-p="inicio">
+<header id="topo"></header>
 <main>
-    <section id="inicio">
-        <h2>Bem vindo ao site oficial do Valhalla FC, o gigante do Recanto!</h2>
-        <p>Desde 2025</p>
-    </section>
-
-
+<section class="hero"><div class="wrap"><div><h1>Guerreiros da Quebrada</h1><p>Valhalla FC é um clube amador de futebol e futsal do Recanto Verde do Sol, em São Mateus. Acompanhe os jogos, conheça o elenco e a história do clube.</p><a class="btn" href="jogos.html">Ver jogos</a><a class="btn o" href="elenco.html">Conhecer o elenco</a></div><img src="img/escudo_valhalla.png" alt="Escudo do Valhalla FC"></div></section>
+<div class="info"><div><b>29/07/2025</b><span>Fundação do clube</span></div><div><b>2 títulos</b><span>Copa FJU 2025 e Liga Valhalla 2026</span></div><div><b>Copa FJU – 3ª edição</b><span>Fase de grupos em andamento</span></div></div>
+<section class="wrap"><h2 class="t">Últimos resultados</h2><div id="res" class="grade"></div><p style="margin-top:16px"><a href="jogos.html">Ver todos os jogos</a></p></section>
+<section class="wrap" style="padding-top:0"><h2 class="t">Últimas notícias</h2><div id="nots" class="grade"></div></section>
 </main>
+<footer id="rodape"></footer>
+<script src="jogadores.js"></script><script src="jogos.js"></script><script src="script.js"></script>
 </body>
-
 </html>
